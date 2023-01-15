@@ -1,0 +1,13 @@
+{% autoescape off %}
+
+Hello {{ email }},
+
+Thank you for subscribing to our newsletter. You will periodically receive<br>
+our specialised newsletter.
+
+Sincerely,
+{% for a in about %}
+The {{ a.name }} Team.
+{% endfor %}
+
+{% endautoescape %}
